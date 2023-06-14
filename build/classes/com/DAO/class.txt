@@ -1,0 +1,62 @@
+-Nước hoa:
++Mã nước hoa
+ + Tên nước hoa
+ + Tên thương hiệu
+ + Ngày sản xuất
+ +Gia goc
+ +Gia nhap
+ + Giá bán
+ + Số lượng
+ + Loại
+ + xuất xứ
+ +mo ta
+
+-Thương hiệu:
+  +Mã thương hiệu
+  + Tên
+  + Năm ra đời
+  + Tiểu sử
+
+-Loại:
+ +Mã thể loại
+ +Tên loại
+
+-Khách hàng:
+ +Mã khách hàng
+ +Tên đang nhập
+ +Mật khẩu
+ +Giới tính
+ +Họ và tên
+ +Địa chỉ nhận hàng
+ +Địa chỉ 
+ +Địa chỉ mua hàng 
+ +Ngày sinh
+ +Số điên thoại
+ +địa chỉ email
+ +ĐĂNG ký nhận bản tin email
+
+-Đơn hàng:
+ +Mã đơn hàng
+ +Khách hàng
+ +Địa chỉ người mua
+ +Địa chỉ nhận hàng
+ + Trạng thái:Mới tạo, đang xử lý, đang giao hàng, đã giao hàng thành công,trả hàng
+ +Hình thức thanh toán/COD
+ +Trạng thái thanh toán
+ +Số tiền còn thiếu
+ +Ngày đặt hàng
+ +Ngày giao hàng
+
+
+-Chi tiết đơn hàng:
+ + Mã chi tiết đơn hàng
+ + Đơn hàng
+ + Mã nước hoa
+ +Số lượng
+ +Giá sản phẩm
+ +Giảm giá
+ +Giá bán(có thể có giảm giá)
+ +Thuế VAT
+ +Tổng thành tiền
+
+

@@ -1,0 +1,151 @@
+<%@page import="com.entity.KhachHang"%>
+<%@page import="com.entity.SanPham"%>
+<%@page import="java.util.List"%>
+<%@page import="com.DB.DBConnect"%>
+<%@page import="com.DAO.SPDAOImpl"%>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+    
+ <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>  
+ <%@page isELIgnored="false" %>
+ 
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>loc_theo_san_pham</title>
+<%@include file="all/allcss.jsp"%>
+<style type="text/css">
+/* toast*/
+#toast {
+	min-width: 300px;
+	position: fixed;
+	bottom: 30px;
+	left: 50%;
+	margin-left: -125px;
+	background: #333;
+	padding: 10px;
+	color: white;
+	text-align: center;
+	z-index: 1;
+	font-size: 18px;
+	visibility: hidden;
+	box-shadow: 0px 0px 100px #000;
+}
+
+#toast.display {
+	visibility: visible;
+	animation: fadeIn 0.5, fadeOut 0.5s 2.5s;
+}
+
+@keyframes fadeIn {
+	from {
+		bottom: 0;
+		opacity: 0;
+	}
+
+	to {
+		bottom: 30px;
+		opacity: 1;
+	}
+}
+
+@keyframes fadeOut {
+	from {
+		bottom: 30px;
+		opacity: 1;
+	}
+
+	to {
+		bottom: 0;
+		opacity: 0;
+	}
+}
+
+
+/* toast*/
+</style>
+</head>
+<body>
+	<%
+	KhachHang kh = (KhachHang) session.getAttribute("khachhangobj");
+	%>
+	
+	<%@include file="all/navbar.jsp"%>
+	<div class="container-fluid">
+		<div class="row">
+
+			<div class="container">
+				<div class="text-center mt-5"></div>
+				
+				  <c:if test="${not empty addCart}">
+    <div class="alert alert-success" role="alert">
+    ${addCart}
+     </div> 
+     <c:remove var="addCart" scope="session"/>
+	</c:if>
+	
+				<h4 class="text-center">Sản phẩm lọc theo tìm kiếm</h4>
+				<div class="text-center mt-5"></div>
+				<div class="row">
+
+					<%
+					String loai = request.getParameter("loai");
+					String donGia = request.getParameter("donGia");
+					String thuongHieu = request.getParameter("thuongHieu");
+					String dungTich = request.getParameter("dungTich");
+					
+					SPDAOImpl dao2 = new SPDAOImpl(DBConnect.getConn());
+					List<SanPham> list2 = dao2.getLocSP(loai,dungTich,thuongHieu,donGia);
+					for (SanPham s : list2) {
+					%>
+					<div class="col-md-4">
+						<div class="card crd-ho">
+							<div class="card-body text-center">
+								<img alt="" src="sp/<%=s.getPhoto()%>"
+									style="width: 280px; height: 280px" class="img-thumblin ">
+								<p><%=s.getTenNuocHoa() %></p>
+						<p><%=s.getTenthuongHieu() %></p>
+						
+							<p><%=s.getGiaBan() %><img src="icon/tien.png"
+					alt="tien" width="20" height="30"></p>
+
+								<%
+								if (kh == null) {
+								%>
+
+								<a href="dangnhap.jsp" class="btn btn-pink btn-sm col-md-4">Thêm
+									vào giỏ</a>
+								<%
+								} else {
+								%>
+
+
+								<a
+									href="giohang?idsp=<%=s.getIdNuoc_Hoa()%>&&idkh=<%=kh.getIdKhachHang()%>"
+									class="btn btn-pink btn-sm col-md-4">Thêm vào giỏ</a>
+
+								<%
+								}
+								%>
+
+
+								<a href="view_sp.jsp?id=<%=s.getIdNuoc_Hoa()%>"
+									class="btn btn-secondary btn-sm col-md-2">Xem </a>
+
+							</div>
+						</div>
+					</div>
+
+					<%
+					}
+					%>
+				</div>
+			</div>
+
+
+		</div>
+	</div>
+
+</body>
+</html>
