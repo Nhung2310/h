@@ -112,10 +112,10 @@ Trang chủ của admin:
 ![image](https://github.com/Nhung2310/web_nuoc_hoa/assets/89560779/82152a2b-2f55-4b63-99db-91717991e2dc)
 
 
+12.	 Trang xem lại sản phẩm pass
 
-
-11.	 Trang xem lại sản phẩm pass
 ![image](https://github.com/Nhung2310/web_nuoc_hoa/assets/89560779/834df3ec-2beb-4893-9de3-3a5e27ceced8)
+
 
 ![image](https://github.com/Nhung2310/web_nuoc_hoa/assets/89560779/d4501225-eea0-4f40-91f9-8a7245b171cc)
 
