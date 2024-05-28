@@ -87,25 +87,25 @@ Trang chủ của admin:
 
 ![image](https://github.com/Nhung2310/web_nuoc_hoa/assets/89560779/5edbae19-9036-4172-b4d6-269a11318158)
 
-
- 
 5.	Lựa chọn các sản phẩm theo mục
 
 ![image](https://github.com/Nhung2310/web_nuoc_hoa/assets/89560779/cb80f44d-3c0d-4f53-9608-964fa1275570)
 
 6.	Trang giới thiệu cửa hàng
  
-![image](https://github.com/Nhung2310/web_nuoc_hoa/assets/89560779/4794a8df-9b51-4617-8390-2c23e9945d06)
+![image](https://github.com/Nhung2310/web_nuoc_hoa/assets/89560779/ef927d53-1f88-4ff2-8f2a-b15db19154f1)
 
 7.	Trang lấy lại mật khẩu
-![image](https://github.com/Nhung2310/web_nuoc_hoa/assets/89560779/e50ba23e-2137-4905-9a7d-998e5dc5dd5c)
 
-8.	Giao diện khi khách hàng đăng nhập
+![image](https://github.com/Nhung2310/web_nuoc_hoa/assets/89560779/c376e81d-53ba-48ec-9224-dbdbe4f8de1f)
+
+9.	Giao diện khi khách hàng đăng nhập
  
 ![image](https://github.com/Nhung2310/web_nuoc_hoa/assets/89560779/aea77642-6a98-467a-a762-7719e9231c23)
 
 9.	Trang khi người nhập ấn vào chỉnh sửa
- ![image](https://github.com/Nhung2310/web_nuoc_hoa/assets/89560779/b7bf2ffa-cc07-40ec-b570-99f3981eeb5e)
+
+![image](https://github.com/Nhung2310/web_nuoc_hoa/assets/89560779/b7bf2ffa-cc07-40ec-b570-99f3981eeb5e)
 
 11.	 Trang pass lại sản phẩm
  
